@@ -30,7 +30,6 @@ workflows:
   my_workflow:
     # Run the welcome/run job in its own container
     jobs:
-      build:
       - save_hello_world_output
       - print_output_file:
           requires:
